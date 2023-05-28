@@ -16,7 +16,10 @@ const IpAddresses = ['107.108.209.204', '107.108.209.205', '107.108.209.206'];
 // });
 
 app.get("/getStatuses", (req, res) => {
-    
+    var obj = {};
+    IpAddresses.forEach(ip => {
+        
+    });
 });
 
 app.listen(PORT, "localhost", () => {
