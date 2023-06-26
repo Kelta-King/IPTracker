@@ -1,70 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IP Tracker Tool</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="gradient-background">
-        <table class="styled-table" id="dataTable">
-            <thead>
-                <tr>
-                    <th style="border-radius: 5px 0 0 0;">IP</th>
-                    <th>Device</th>
-                    <th>Internet</th>
-                    <th>MacFree</th>
-                    <th>Status</th>
-                    <th style="border-radius: 0 5px 0 0;">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="6"> 
-                        <div style="display: inline-block; width:76.5%">
-                            <input id="filterInput" type="text" placeholder="Filter" class="search-input">
-                        </div>
-                        <div style="display: inline-block; width:20%">
-                            <button id="search" class="search-btn">
-                                <i class="fa fa-search"></i> Search
-                            </button>
-                        </div>
-                </tr>
-                <tr>
-                    <td>107.108.209.205</td>
-                    <td>TIZEN_B2B_TRUNK_PRODUCT2023</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td style="vertical-align: middle;color: #4CAF50;"> <i class="fa fa-circle" style="font-size:12px; margin-right:2px"></i> Alive</td>
-                    <td> 
-                        <button class="recheck-button"> 
-                            <i class="fa fa-refresh" style="margin-right:6px"></i> Recheck
-                        </button> 
-                    </td>
-                </tr>
-                <tr>
-                    <td>107.108.209.204</td>
-                    <td>TIZEN_B2B_TRUNK_PRODUCT2023</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td style="vertical-align: middle;color: #f44336;"> <i class="fa fa-circle" style="font-size:12px; margin-right:2px"></i> Dead</td>
-                    <td> 
-                        <button class="recheck-button"> 
-                            <i class="fa fa-refresh" style="margin-right:6px"></i> Recheck
-                        </button> 
-                    </td>
-                </tr>
-                <!-- and so on... -->
-            </tbody>
-        </table>
-    </div>
-    <script src="JS/filteredSearch.js"></script>
-    <script src="JS/app.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
